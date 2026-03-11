@@ -265,13 +265,13 @@
 
     // Lista global de TODOS os vídeos para Pré-carregamento imediato no cache
     const allVideoUrls = [
-        "https://www.dropbox.com/scl/fi/as6qstpnas95yhadj85k5/Pharrell_In_Studio_with_702_for_a_Star_song_PART_4.mp4?rlkey=2vbt6wqwzc0qg3c66faayxr0t&st=1ynduhac&raw=1",
-        "https://www.dropbox.com/scl/fi/8uiidtqfeg1r56ljogdmf/Pharrell_Williams_Launches_New_ICECREAM_Skate_Team_with_Unreleased_Beat.mp4?rlkey=dusegknrk8h9cviqfueutoweg&st=151bxwmb&raw=1",
-        "https://www.dropbox.com/scl/fi/nnzjssrdn8nexv4jp3ll4/T-Funk-Friends-SF-Spitfire-Wheels-360p-h264-youtube.mp4?rlkey=fjmcngfnouzsp1c7ahk3wfzd9&st=pjo11g9s&raw=1",
-        "https://www.dropbox.com/scl/fi/vjpfue8wsivo1pfxtatem/iPod-shuffle-iMac-360p-h264-youtube-edited.mp4?rlkey=im2qbzqcws5zgmd4gq98r1khp&st=nr5jr70a&raw=1",
-        "https://www.dropbox.com/scl/fi/p1292i074lcdqucgjbz3k/Text-Text-Revolution-skratch13-240p-h264-youtube.mp4?rlkey=pid0kqgbhj9h6ka39i7rrmte0&st=dftvhynk&raw=1",
-        "https://www.dropbox.com/scl/fi/z3l1l7l07mozaalh820e5/videoplayback.mp4?rlkey=iu6efot92aplohnjh69d2qm0l&st=8lmmv1yf&raw=1",
-        "https://www.dropbox.com/scl/fi/e3pegixcj8qqkal20ptv6/Video-11-03-26-03-51-11.mov?rlkey=s09r7dm55dsvpccax72ot8izx&st=uckd3u68&raw=1"
+        "https://dl.dropboxusercontent.com/scl/fi/as6qstpnas95yhadj85k5/Pharrell_In_Studio_with_702_for_a_Star_song_PART_4.mp4?rlkey=2vbt6wqwzc0qg3c66faayxr0t&st=1ynduhac&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/8uiidtqfeg1r56ljogdmf/Pharrell_Williams_Launches_New_ICECREAM_Skate_Team_with_Unreleased_Beat.mp4?rlkey=dusegknrk8h9cviqfueutoweg&st=151bxwmb&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/nnzjssrdn8nexv4jp3ll4/T-Funk-Friends-SF-Spitfire-Wheels-360p-h264-youtube.mp4?rlkey=fjmcngfnouzsp1c7ahk3wfzd9&st=pjo11g9s&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/vjpfue8wsivo1pfxtatem/iPod-shuffle-iMac-360p-h264-youtube-edited.mp4?rlkey=im2qbzqcws5zgmd4gq98r1khp&st=nr5jr70a&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/p1292i074lcdqucgjbz3k/Text-Text-Revolution-skratch13-240p-h264-youtube.mp4?rlkey=pid0kqgbhj9h6ka39i7rrmte0&st=dftvhynk&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/z3l1l7l07mozaalh820e5/videoplayback.mp4?rlkey=iu6efot92aplohnjh69d2qm0l&st=8lmmv1yf&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/e3pegixcj8qqkal20ptv6/Video-11-03-26-03-51-11.mov?rlkey=s09r7dm55dsvpccax72ot8izx&st=uckd3u68&raw=1"
     ];
 
     // O PRÉ-CARREGAMENTO SEGURO (MÉTODO FETCH SILENCIOSO)
@@ -329,8 +329,6 @@
     }
 
     function initBootQuiz() {
-        preloadAssetsSafely(); // Baixa silenciosamente na rede sem travar o processador
-
         const input = document.getElementById('quiz-input');
         const progress = document.getElementById('intro-boot-progress');
         const bootScreen = document.getElementById('intro-boot-screen');
@@ -543,9 +541,9 @@
     }
 
     const archiveSideVideos = [
-        "https://www.dropbox.com/scl/fi/as6qstpnas95yhadj85k5/Pharrell_In_Studio_with_702_for_a_Star_song_PART_4.mp4?rlkey=2vbt6wqwzc0qg3c66faayxr0t&st=1ynduhac&raw=1",
-        "https://www.dropbox.com/scl/fi/8uiidtqfeg1r56ljogdmf/Pharrell_Williams_Launches_New_ICECREAM_Skate_Team_with_Unreleased_Beat.mp4?rlkey=dusegknrk8h9cviqfueutoweg&st=151bxwmb&raw=1",
-        "https://www.dropbox.com/scl/fi/nnzjssrdn8nexv4jp3ll4/T-Funk-Friends-SF-Spitfire-Wheels-360p-h264-youtube.mp4?rlkey=fjmcngfnouzsp1c7ahk3wfzd9&st=pjo11g9s&raw=1"
+        "https://dl.dropboxusercontent.com/scl/fi/as6qstpnas95yhadj85k5/Pharrell_In_Studio_with_702_for_a_Star_song_PART_4.mp4?rlkey=2vbt6wqwzc0qg3c66faayxr0t&st=1ynduhac&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/8uiidtqfeg1r56ljogdmf/Pharrell_Williams_Launches_New_ICECREAM_Skate_Team_with_Unreleased_Beat.mp4?rlkey=dusegknrk8h9cviqfueutoweg&st=151bxwmb&raw=1",
+        "https://dl.dropboxusercontent.com/scl/fi/nnzjssrdn8nexv4jp3ll4/T-Funk-Friends-SF-Spitfire-Wheels-360p-h264-youtube.mp4?rlkey=fjmcngfnouzsp1c7ahk3wfzd9&st=pjo11g9s&raw=1"
     ];
 
     function archive_makeDraggable(monitor) {
@@ -667,7 +665,9 @@
     function syncVideo(audioId, vizId, vidId) {
         const audio = document.getElementById(audioId), viz = document.getElementById(vizId), video = document.getElementById(vidId);
         if(!audio || !viz || !video) return;
-        audio.onplay = () => { viz.style.display = 'block'; video.play(); }; audio.onpause = () => { video.pause(); viz.style.display = 'none'; }; audio.onended = () => { video.pause(); viz.style.display = 'none'; };
+        audio.onplay = () => { viz.style.display = 'block'; video.play().catch(e => {}); }; 
+        audio.onpause = () => { video.pause(); viz.style.display = 'none'; }; 
+        audio.onended = () => { video.pause(); viz.style.display = 'none'; };
     }
 
     function tabAction(el, type) {
@@ -681,11 +681,11 @@
         if (type === 'audio') {
             v.innerHTML = `
                 <h2>AUDIO.DAT</h2>
-                <div class="file-entry"><div id="viz1" class="audio-visualizer"><video id="vid1" loop muted playsinline><source src="https://www.dropbox.com/scl/fi/vjpfue8wsivo1pfxtatem/iPod-shuffle-iMac-360p-h264-youtube-edited.mp4?rlkey=im2qbzqcws5zgmd4gq98r1khp&st=nr5jr70a&raw=1" type="video/mp4"></video></div><strong>CONFUSAO_MENTAL!</strong><audio id="audio1" controls controlsList="nodownload noplaybackrate" preload="auto" src="https://www.dropbox.com/scl/fi/433bxjfabb2ynd4bce3cv/liamfenti-new-era-confus-o_mental-133bpm.wav?rlkey=r7whqf7fr759tpolqy2tnag53&st=umito00q&raw=1"></audio></div>
-                <div class="file-entry"><div id="viz2" class="audio-visualizer"><video id="vid2" loop muted playsinline><source src="https://www.dropbox.com/scl/fi/p1292i074lcdqucgjbz3k/Text-Text-Revolution-skratch13-240p-h264-youtube.mp4?rlkey=pid0kqgbhj9h6ka39i7rrmte0&st=dftvhynk&raw=1" type="video/mp4"></video></div><strong>PROSPECTO_RICOSEM_BREVE!</strong><audio id="audio2" controls controlsList="nodownload noplaybackrate" preload="auto" src="https://www.dropbox.com/scl/fi/shz1dmdjxh0r1z405jimn/liamfenti-new-era-prospecto_ricos_embreve-133bpm.wav?rlkey=dce11zlowrpu6wazltb6x3i7i&st=1rjmbf7b&raw=1"></audio></div>
-                <div class="file-entry"><div id="viz3" class="audio-visualizer"><video id="vid3" loop muted playsinline><source src="https://www.dropbox.com/scl/fi/z3l1l7l07mozaalh820e5/videoplayback.mp4?rlkey=iu6efot92aplohnjh69d2qm0l&st=8lmmv1yf&raw=1" type="video/mp4"></video></div><strong>INTROSPECTIVO_EU_ERA!</strong><audio id="audio3" controls controlsList="nodownload noplaybackrate" preload="auto" src="https://www.dropbox.com/scl/fi/wvfictlepx4gzr9z4oohb/liamfenti-new-era-introspectivo_euera-138bpm.wav?rlkey=n7jat9tivwzea3c4079x8rau0&st=au1wi86l&raw=1"></audio></div>`;
+                <div class="file-entry"><div id="viz1" class="audio-visualizer"><video id="vid1" loop muted playsinline><source src="https://dl.dropboxusercontent.com/scl/fi/vjpfue8wsivo1pfxtatem/iPod-shuffle-iMac-360p-h264-youtube-edited.mp4?rlkey=im2qbzqcws5zgmd4gq98r1khp&st=nr5jr70a&raw=1" type="video/mp4"></video></div><strong>CONFUSAO_MENTAL!</strong><audio id="audio1" controls controlsList="nodownload noplaybackrate" preload="auto" src="https://dl.dropboxusercontent.com/scl/fi/433bxjfabb2ynd4bce3cv/liamfenti-new-era-confus-o_mental-133bpm.wav?rlkey=r7whqf7fr759tpolqy2tnag53&st=umito00q&raw=1"></audio></div>
+                <div class="file-entry"><div id="viz2" class="audio-visualizer"><video id="vid2" loop muted playsinline><source src="https://dl.dropboxusercontent.com/scl/fi/p1292i074lcdqucgjbz3k/Text-Text-Revolution-skratch13-240p-h264-youtube.mp4?rlkey=pid0kqgbhj9h6ka39i7rrmte0&st=dftvhynk&raw=1" type="video/mp4"></video></div><strong>PROSPECTO_RICOSEM_BREVE!</strong><audio id="audio2" controls controlsList="nodownload noplaybackrate" preload="auto" src="https://dl.dropboxusercontent.com/scl/fi/shz1dmdjxh0r1z405jimn/liamfenti-new-era-prospecto_ricos_embreve-133bpm.wav?rlkey=dce11zlowrpu6wazltb6x3i7i&st=1rjmbf7b&raw=1"></audio></div>
+                <div class="file-entry"><div id="viz3" class="audio-visualizer"><video id="vid3" loop muted playsinline><source src="https://dl.dropboxusercontent.com/scl/fi/z3l1l7l07mozaalh820e5/videoplayback.mp4?rlkey=iu6efot92aplohnjh69d2qm0l&st=8lmmv1yf&raw=1" type="video/mp4"></video></div><strong>INTROSPECTIVO_EU_ERA!</strong><audio id="audio3" controls controlsList="nodownload noplaybackrate" preload="auto" src="https://dl.dropboxusercontent.com/scl/fi/wvfictlepx4gzr9z4oohb/liamfenti-new-era-introspectivo_euera-138bpm.wav?rlkey=n7jat9tivwzea3c4079x8rau0&st=au1wi86l&raw=1"></audio></div>`;
             syncVideo('audio1', 'viz1', 'vid1'); syncVideo('audio2', 'viz2', 'vid2'); syncVideo('audio3', 'viz3', 'vid3');
-        } else if (type === 'visual') { v.innerHTML = `<h2>VISUAL.LOG</h2><div class="file-entry"><strong>FILE: UNKNOWN_RECOVERY.mov</strong><video controls controlsList="nodownload noplaybackrate" preload="auto" src="https://www.dropbox.com/scl/fi/e3pegixcj8qqkal20ptv6/Video-11-03-26-03-51-11.mov?rlkey=s09r7dm55dsvpccax72ot8izx&st=uckd3u68&raw=1"></video></div>`;
+        } else if (type === 'visual') { v.innerHTML = `<h2>VISUAL.LOG</h2><div class="file-entry"><strong>FILE: UNKNOWN_RECOVERY.mov</strong><video controls controlsList="nodownload noplaybackrate" preload="auto" src="https://dl.dropboxusercontent.com/scl/fi/e3pegixcj8qqkal20ptv6/Video-11-03-26-03-51-11.mov?rlkey=s09r7dm55dsvpccax72ot8izx&st=uckd3u68&raw=1"></video></div>`;
         } else if (type === 'feed') { v.innerHTML = `<h2>FEED.TXT</h2><div id="feed-logs"></div>`; const logs = ["[SYS] Connection established.", "[SYS] Analyzing intruder behavior...", "[WARN] Your session is being recorded.", "[!] URGENT: UNAUTHORIZED ACCESS DETECTED.", `[SEC] Trace complete. Device: ${navigator.platform}`, "[MSG] This site has been hacked. Files are corrupted.", "[MSG] Intruder detected in IDENTITY.INF sector.", "[MSG] We must take action against the intruder before the system crashes.", "[SYS] Firewall status: COMPROMISED.", "[SYS] Attempting to isolate data packets...", "[MSG] So... it's you again.", "[SYS] LOG_END."]; logs.forEach((log, i) => { setTimeout(() => { const logsDiv = document.getElementById('feed-logs'); if(logsDiv){ const line = document.createElement('p'); line.style.margin = "5px 0"; line.innerHTML = `<span style="color:${document.documentElement.classList.contains('purple-protocol') ? '#a020f0' : '#00ff95'}">></span> ${log}`; logsDiv.appendChild(line); scrollArea.scrollTop = scrollArea.scrollHeight; } }, (i + 1) * 3500); });
         } else if (type === 'identity') { v.innerHTML = `<h2>IDENTITY.INF</h2><div id="tw" style="font-size:1.1rem; line-height:1.6; min-height:300px; text-align:justify;"></div>`; typeWriterIdentityArchive(); }
     }
@@ -711,10 +711,20 @@
         runArchiveBoot(); 
     }
 
-    // INICIA APENAS A FASE 1 AO CARREGAR O SITE
+    // INICIA COM 30% DE CHANCE DE TER QUIZ E 70% DE IR DIRETO PRA FASE 1
     window.onload = () => {
         initMatrixRain();
-        initBootQuiz();
+        preloadAssetsSafely(); // Baixa silenciosamente na rede sem travar
+        
+        // Probabilidade de 30%
+        if (Math.random() <= 0.30) {
+            initBootQuiz();
+        } else {
+            // Se cair nos 70%, esconde a tela de quiz imediatamente e inicia a Fase 1
+            const bootScreen = document.getElementById('intro-boot-screen');
+            if(bootScreen) bootScreen.style.display = 'none';
+            startMainSite();
+        }
     };
 </script>
 </body>
